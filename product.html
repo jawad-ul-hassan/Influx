@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome Link -->
+    <script
+      src="https://kit.fontawesome.com/6255250c8f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Influx</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="header-content-logo">
+            <img src="./images/influx-logo.png" alt="Influx Logo" />
+          </a>
+
+          <nav class="navbar">
+            <a href="./product.html" class="nav-links">Products</a>
+            <a href="./contact.html" class="nav-links">Contact</a>
+          </nav>
+
+          <div class="mobile-menu" id="hamburger-menu">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile-Menu -->
+    <div class="sidebar-container">
+      <div class="sidebar-menu">
+        <div class="sidebar-header">
+          <i id="close-menu" class="fas fa-times"></i>
+          <div class="shpping-cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="shpping-cart-count">0</span>
+          </div>
+        </div>
+        <nav class="sidebar-nav">
+          <a href="#" class="sidebar-nav-links">Machining</a>
+          <a href="./product.html" class="sidebar-nav-links">Products</a>
+          <a href="./contact.html" class="sidebar-nav-links">Contact</a>
+        </nav>
+
+        <div class="sidebar-btns">
+          <a href="#" class="btn-signin">Sign In</a>
+          <a href="#" class="btn-getquote">Get a quote</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <main class="main">
+      <!-- Product-Hero -->
+      <section class="product-hero">
+        <div class="container">
+          <div class="product-hero-content">
+            <img src="./images/product-header.png" />
+            <div class="product-hero-description">
+              <h1>Products</h1>
+              <p>For all your motion control project needs</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product-Section -->
+      <section class="product">
+        <div class="container">
+          <div class="product-content">
+            <p>Product items are set to launch beginning of 2023</p>
+            <div class="product-item">
+              <div class="product-description">
+                <h1>Gears</h1>
+
+                <a href="#" class="btn btn-quote desktop-hide">Get a Quote</a>
+
+                <ul class="product-item-list">
+                  <li>Standard & Custom</li>
+                  <li>Spur Gears</li>
+                  <li>Helical Gears</li>
+                  <li>Pinions</li>
+                  <li>Miter and Bevel Gears</li>
+                  <li>Worm Gears and Worms</li>
+                </ul>
+              </div>
+
+              <div class="product-img">
+                <img src="./images/gears.png" alt="Gears" />
+              </div>
+            </div>
+
+            <div class="product-item">
+              <div class="product-description">
+                <h1>Timing Pulley/Belts</h1>
+                <a href="#" class="btn btn-quote desktop-hide">Get a Quote</a>
+              </div>
+              <div class="product-img">
+                <img src="./images/timing-pulley.png" alt="Timing Pully" />
+              </div>
+            </div>
+          </div>
+          <div class="logo-right">
+            <img src="./images/influx-logo.png" alt="Influx" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <nav class="footer-nav">
+            <a href="tel:+1 (408) 508-3373" class="footer-nav-links"
+              ><i class="fas fa-mobile-alt"></i>
+              <span>+1 (408) 508-3373</span></a
+            >
+            <a href="mailto:sales@influxxlabs.com" class="footer-nav-links"
+              ><i class="far fa-envelope"></i>
+              <span>sales@influxxlabs.com</span></a
+            >
+            <a href="#" class="footer-nav-links"
+              ><i class="fas fa-map-marker-alt"></i>
+              <span
+                >202 WILLOW HILL CT. <br />
+                LOS GATOS CA, 95032</span
+              ></a
+            >
+          </nav>
+
+          <div class="footer-social">
+            <a
+              href="https://www.facebook.com/Influx-Labs-103146212302455"
+              class="social-links"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/company/influx-labs"
+              class="social-links"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://www.instagram.com/" class="social-links"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script -->
+    <script>
+      // Side-Menu
+
+      const mobileMenu = document.querySelector('#hamburger-menu');
+      const closeMenu = document.querySelector('#close-menu');
+      const sideMenu = document.querySelector('.sidebar-menu');
+
+      mobileMenu.addEventListener('click', () => {
+        sideMenu.classList.add('active');
+      });
+
+      closeMenu.addEventListener('click', () => {
+        sideMenu.classList.remove('active');
+      });
+    </script>
+  </body>
+</html>
