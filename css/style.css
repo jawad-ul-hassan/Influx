@@ -128,14 +128,43 @@ p {
   background-color: rgba(0, 0, 128, 0.35);
   color: #ffffff;
   border-radius: 0.25rem;
+  width: 45rem;
+  transition: 1s ease-in;
 }
 
 .services-list > li {
-  font-size: 1.8rem;
-  font-weight: 300;
+  font-size: 2rem;
+  font-weight: 400;
   letter-spacing: 1px;
   text-transform: uppercase;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.services-list > li:first-child {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: animated-text 2s steps(30, end) 0.8s 1 normal both;
+}
+
+.services-list > li:nth-child(2) {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: animated-text 2s steps(30, end) 2.2s 1 normal both;
+}
+
+.services-list > li:last-child {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: animated-text 2s steps(30, end) 3.6s 1 normal both;
+}
+
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 400px;
+  }
 }
 
 .services-list > li:last-child {
