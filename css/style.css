@@ -129,6 +129,19 @@ p {
   color: #ffffff;
   border-radius: 0.25rem;
   width: 45rem;
+  animation: 0.8s fadeIn;
+  animation-fill-mode: forwards;
+  transition: animation 300ms ease;
+  visibility: hidden;
+}
+
+@keyframes fadeIn {
+  95% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }
 
 .services-list > li {
