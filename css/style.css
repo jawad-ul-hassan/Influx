@@ -129,7 +129,6 @@ p {
   color: #ffffff;
   border-radius: 0.25rem;
   width: 45rem;
-  transition: 1s ease-in;
 }
 
 .services-list > li {
@@ -815,6 +814,15 @@ p {
 
   .contact-description > p {
     font-size: 1.6rem;
+  }
+
+  @keyframes animated-text {
+    from {
+      width: 0;
+    }
+    to {
+      width: 300px;
+    }
   }
 }
 
