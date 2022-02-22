@@ -555,6 +555,16 @@ p {
 
 /* -----------------------------Contact-Page------------------------------- */
 
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.contact-section {
+  flex: 1;
+}
+
 .contact {
   margin-top: 3.5rem;
 }
